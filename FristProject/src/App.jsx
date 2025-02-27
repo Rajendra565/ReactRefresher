@@ -3,13 +3,13 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [color, setColor] = useState("#414141")
+  const [color, setColor] = useState("#fff")
 
   return (
     <>
     <div className="hero" style={{backgroundColor:color,width:"100%",height:"100vh",display:'flex',alignItems:"end",justifyContent:"center",paddingBottom:"10%"}}>
 
-    <div className="btns" style={{display:"flex",gap:"3px", backgroundColor:"#fff",minWidth:"fit", padding:"5px", boxShadow:"10px 10px 10px #414141"}}>
+    <div className="btns" style={{display:"flex",gap:"3px", backgroundColor:"#fff",minWidth:"fit", padding:"5px", boxShadow:"10px 10px 10px #414141", borderRadius:"20px"}}>
       <button className='' style={{padding:"15px", borderRadius:"10px",backgroundColor:"red", color:"#fff",fontSize:"20px",border:"2px solid #fff"}} onClick={()=>setColor("red")}>Red</button>
       <button className='' style={{padding:"15px", borderRadius:"10px",backgroundColor:"green", color:"#fff",fontSize:"20px",border:"2px solid #fff"}} onClick={()=>setColor("green")}>green</button>
       <button className='' style={{padding:"15px", borderRadius:"10px",backgroundColor:"gray", color:"#fff",fontSize:"20px",border:"2px solid #fff"}} onClick={()=>setColor("gray")}>gray</button>
